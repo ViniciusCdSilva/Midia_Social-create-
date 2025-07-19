@@ -36,17 +36,35 @@ body {
      position: absolute;
 }
 
+@keyframes brilhoBorda{
+  0%{
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  }
+  50%{
+    box-shadow: 0 0 25px 6px rgb(75, 74, 75);
+  }
+  100%{
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+  }
+}
+
 div{
-  background-color: blueviolet;
   border-radius: 10%;
-  background-color: rgb(235, 133, 218);
+  background-color: rgb(131, 128, 128);
   border-radius: 20px;
-  border: 5px 5px 5px 5px black;
-  box-shadow: 50px black;
-  box-shadow: 50px rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   height: 25rem ;
   width: 25rem;
+  animation: brilhoBorda 2s infinite ease-in-out;
 }
+div:hover{
+  box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.5),
+              0 0 40px 12px rgb(75, 74, 75);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+
+}
+
 footer{
 margin-top: 9rem;
 color: white;
@@ -70,11 +88,19 @@ label{
   font-size: 2rem;
 }
 #Name{
-  font-size: 2rem;
+  font-size: 25px;
   color: rgb(0, 0, 0);
+  margin-right: 40%;
+  
 }
 button{
     height: 2rem;
+    width: 15rem;
+    font-size: larger;
+    background: rgb(189, 184, 184);
+    border: 2px solid;
+    border-radius: 20px;
+    
     
 }
 button:hover {
@@ -86,11 +112,25 @@ button:hover {
   100%{ translate: translateY(0);}
 }
 .nbio{
-    color: rgb(0, 255, 42);
+    color: rgb(0, 0, 0);
     margin-top: 10%;
-    margin-right: 50%;
+    margin-right: 81%;
+    font-size: 25px;
 }
 .erro{
   border: 2px solid red;
   background-color: #ffe5e5;
+}
+#name{
+  width: 22rem;
+  height: 1.5rem;
+}
+#bio{
+  width: 22rem;
+  height: 3rem;
+  padding: top 0.5rem;
+  resize: none;
+  vertical-align: top;
+  font-size: 1rem;
+  
 }
