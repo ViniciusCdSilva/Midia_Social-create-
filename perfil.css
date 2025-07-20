@@ -1,0 +1,19 @@
+#previewCap {
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: block;
+  margin-top: 10px;
+  overflow: hidden;
+}
+#perfil{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#perfil div{
+    margin-left: 0;
+    padding: 0;
+}
+h1,p{
+    margin-left: 50px;
+}
