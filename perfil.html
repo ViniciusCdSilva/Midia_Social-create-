@@ -12,12 +12,27 @@
     <div>
      <h1 id="textoNome"></h1>
      <p id="textbio"></p>
-     </div>
-     </div>
-      <label for="imgCapa">Selecione uma imagem :</label>
+     <label for="imgCapa">Selecione uma imagem :</label>
      <input type="file" id="imgCapa"  name="imgCapa" accept="image/*">
+     </div>
+     </div>
+     <div id="galeria">
+        <div class="img-container">
+            <input type="file" accept="image/*" id="img1">
+            <canvas id="preview1" width="200" height="120"></canvas>
+        </div>
+        <div class="img-container">
+            <input type="file" accept="image/*" id="img2">
+            <canvas id="preview2" width="200" height="120"></canvas>
+        </div>
+        <div class="img-container">
+            <input type="file" accept="image/*" id="img3">
+            <canvas id="preview3" width="200" height="200"></canvas>
+        </div>
+     </div>
+      
      
-</body>
+</body> 
 
 <script src="perfil.js"></script>
 </html>

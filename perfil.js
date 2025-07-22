@@ -35,3 +35,31 @@ inputCapa.addEventListener("change",function(){
         ctx.clearRect(0, 0, previewCapa.width , previewCapa.height);
     }
 });
+
+function carregarImagem(inputId, canvasId){
+  const input = document.getElementById(inputId);
+  const canvas = document.getElementById(canvasId);
+  const ctx = canvas.getContext("2d");
+
+  input.addEventListener("change",function (){
+    const arquivo = this.files[0];
+    if(arquivo) {
+      const leitor = new FileReader();
+      leitor.onload= function(e){
+        const img = new Image();
+        img.onload = function(){
+          ctx.clearRect(0,0,canvas.width,canvas.height);
+          ctx.drawImage(img,0,0,canvas.width, canvas.height);
+        };
+        img.src = e.target.result;
+      };
+      leitor.readAsDataURL(arquivo);
+    }else{
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+    }
+  });
+}
+
+carregarImagem("img1","preview1");
+carregarImagem("img2","preview2");
+carregarImagem("img3","preview3");
