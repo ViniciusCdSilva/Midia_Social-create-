@@ -18,6 +18,7 @@
     padding: 30px;
     box-sizing: border-box;
     border-radius: 10px;
+    margin-top: 30px;
 }
 #perfil div{
     flex: 1;
@@ -27,12 +28,13 @@ h1,p{
 }
 body{
     display: flex;
-    align-items:flex-start;
-    justify-content: center;
+    align-items:center;
+    justify-content: flex-start;
     min-height: 100vh;
     margin: 0;
     padding-top: 30px;
     background-color: #000;
+    flex-direction: column;
 
 }
 input[type="file"]{
@@ -47,16 +49,27 @@ input[type="file"]{
     gap: 20px;
     margin-top: 40px;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    background-color: red;
+   
 }
 
 .img-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 200px;
 }
 
 canvas{
     border: 2px solid #000;
     margin-top: 10px;
     background-color: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 300px;
+}
+input[type="fille"]{
+    margin: 0;
 }
