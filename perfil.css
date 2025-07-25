@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10rem;
-    background-color: #f5ecec;
+    background-color: rgb(131, 128, 131);
     max-width :800px; 
     width: 100%;
     min-height: 400px;
@@ -33,9 +33,23 @@ body{
     min-height: 100vh;
     margin: 0;
     padding-top: 30px;
-    background-color: #000;
-    flex-direction: column;
-
+    flex-direction: column; 
+    background: linear-gradient(135deg,  rgb(21, 89, 236),rgb(38, 38, 202),rgb(16, 16, 192), rgb(1, 28, 150), rgb(10, 1, 85),rgb(1, 1, 66),rgb(0, 0, 51),rgb(0, 0, 58)
+   ,rgb(2, 2, 24),black,black,black,black,black,black,black,black,black,black,black,black,black,black,black,black,black,black,black,
+   rgb(17, 1, 17),rgb(49, 3, 49),rgb(58, 3, 58), rgb(61, 3, 61),rgb(94, 3, 94),rgb(133, 5, 133),rgb(189, 8, 189),rgb(195, 0, 255)); 
+    animation: movimentoGradiente 10s ease infinite;   
+    background-size: 200% 200%;
+}
+@keyframes movimentoGradiente {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 input[type="file"]{
     margin-top: 20px;
@@ -51,7 +65,8 @@ input[type="file"]{
     flex-wrap: wrap;
     width: 100%;
     max-width: 800px;
-    background-color: red;
+    background-color: rgb(131, 128, 128);
+    border-radius: 10px;
    
 }
 
@@ -65,7 +80,7 @@ input[type="file"]{
 canvas{
     border: 2px solid #000;
     margin-top: 10px;
-    background-color: #fff;
+    background-color: #c5abab;
     margin-bottom: 10px;
     width: 100%;
     height: 300px;
